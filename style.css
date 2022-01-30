@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: rgb(27, 27, 27);
+    font-family: 'Consolas';
+    display: flex;
+    flex-direction: row;
+
+}
+
+.subjects {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 50%;
+    background-color: rgb(27, 27, 27);
+    padding: 20px;
+}
+.category {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    width: 50%;
+    background-color: rgb(27, 27, 27);
+    padding: 20px;
+}
+
+.container {
+    background-color: #333;
+    padding: 20px;
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    box-shadow: 0 0 30px #000000e1;
+    width: 90% !important;
+
+}
+
+.subjects .container:nth-child(1) {
+    color: rgb(0, 199, 166);
+
+}
+.subjects .container:nth-child(2) {
+    color: rgb(228, 0, 106);
+
+}
+.subjects .container:nth-child(3) {
+    color: rgb(162, 221, 0);
+
+}
+.category .container:nth-child(1) {
+    color: rgb(0, 255, 55);
+
+}
+.category .container:nth-child(2) {
+    color: rgb(255, 238, 0);
+
+}
+.category .container:nth-child(3) {
+    color: rgb(255, 138, 28);
+
+}
+
+.draggable {
+    font-size: 12px;
+    background-color: rgb(24, 24, 24);
+    cursor: grab;
+    display: inline-block;
+    min-width: 10px;
+    margin: 5px;
+    padding: 6px;
+    border-radius: 8px;
+}
+
+.draggable.dragging {
+    cursor: grabbing;
+    opacity: .5;
+}
